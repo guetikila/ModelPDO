@@ -5,6 +5,7 @@ Ce projet aide les développeur PHP à s'occuper de l'aspect métier de leur app
 
 Une simple classe comme celui ci-dessous comporte déjà plusieurs méthodes fonctionnelles 
 héritées de la classe mère Model, objet de ce présent projet.
+
 	class Pays extends Model
 	{   
 		public function __construct($connection)
@@ -13,8 +14,8 @@ héritées de la classe mère Model, objet de ce présent projet.
 		}	
 	}
 	
-Les méthodes disponibles sont:
--------------------------------------------------------------------------------------
+# Les méthodes disponibles sont:
+#-------------------------------------------------------------------------------------
 /* Prend en paramètre un tableau associatif(le nom des colonnes dans la BD) */
 public function add($object = array())
 
@@ -22,7 +23,7 @@ public function add($object = array())
 public function update($object = array(),$id)
 
 /* Prend en paramètre un tableau associatif(le nom des colonnes à modifier dans la BD) 
- * et un tableau contenant une colonne et sa valeur */
+  et un tableau contenant une colonne et sa valeur */
 public function updateByField($object = array(),$field = array('name'=>'','value'=>''))
 
 /* Prend en paramètre l'id de l'élément à trouver dans la base de données */
@@ -40,7 +41,7 @@ public function findFirstByField($field = array('name'=>'','value'=>''))
 public function findLastByField($field = array('name'=>'','value'=>''))
 public function findByField($field = array('name'=>'','value'=>''))
 
-/* Retourne tous les éléments de la table de la BD **
+/* Retourne tous les éléments de la table de la BD */
 public function findAll()
 
 /* Supprime l'élément dont l'id est passé en paramètre dans la BD */
@@ -56,7 +57,7 @@ pour vous cnsacrer à autre chose.
 
 Ce n'est pas cool pour vous? Ecrivez moi guetikila@gmail.com pour vous avis
 
-Au lieu de devoir créer cette horible méthode, vous ne faites rien et elle existe déjà:
+# Au lieu de devoir créer cette horible méthode, vous ne faites rien et elle existe déjà:
 
 public function add($something = array())
 {
